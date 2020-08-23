@@ -279,9 +279,19 @@ a, button {
     right: 200px;
     position: fixed;
 }
+
+.mobile-Exchange{
+    display:none;
+}
 /* small mobile :320px. */
 @media (max-width: 767px) {
     .imagelogo {
         height:80px!important;
+    }
+    .exchangeRate{
+        display:none!important;
+    }
+    .mobile-Exchange{
+        display:block!important;
     }
 }
