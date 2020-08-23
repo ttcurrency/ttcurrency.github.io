@@ -266,6 +266,10 @@ a, button {
 .explore-detail {
     padding-top: 60px;
 }
+
+.footer-padding{
+    padding-top:20px;
+}
 /* small mobile :320px. */
 @media (max-width: 767px) {
     .imagelogo {
