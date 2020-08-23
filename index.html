@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
     <!-- ? Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -37,7 +38,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
@@ -46,7 +47,7 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+                        <a href="index.html"><img class="imagelogo" src="img/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -54,16 +55,17 @@
                             <nav> 
                                 <ul id="navigation">                                                                                          
                                     <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">Blog</a>
+                                    <li><a href="#">Exchange Rate</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="services.html">About Us</a></li>
+                                    <!-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="blog_details.html">Blog Details</a></li>
                                             <li><a href="elements.html">Element</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    </li> -->
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -71,7 +73,7 @@
                 </div> 
                 <div class="header-right d-none d-lg-block">
                     <a href="#" class="header-btn1"><img src="img/icon/call.png" alt=""> (08) 728 256 266</a>
-                    <a href="#" class="header-btn2">Make an Appointment</a>
+                    <a href="#" class="header-btn2">CALL US</a>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="col-12">
@@ -89,21 +91,141 @@
                 <div class="single-slider slider-height d-flex align-items-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-9">
                                 <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Quality laundry service in your city</h1>
-                                    <p data-animation="fadeInLeft" data-delay="0.4s">We take care about cleenness of your cloth</p>
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Best Exchange Rates</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">TT Currency Exchange provide you with the best exchange rates.</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Exchange Rates</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 animate-box fadeInUp animated-fast">
+                                <div class="wpb_wrapper">
+                                    <div id="bfc_block_main" class="bfc_block">
+                                        <div class="tabs" style="display:flex;">
+                                            <div class="" index="1" id="transfer">Currency Exchange</div>
+                                        </div>
+                                        <div class="tab_content cur_content">
+                    
+                    
+                                            <div class="content_2 active" index="2">
+                                                <table cellspacing="0" cellpadding="0">
+                                                    <tbody id="table2">
+                                                        <tr class="head">
+                                                            <th> Currency </th>
+                                                            <th> Buy </th>
+                                                            <th> Sell </th>
+                                                        </tr>
+                                                        
+                                                        
+                                                    <tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/sg/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">SGD</div>
+                                                                    <span id="full-name">Singapore Dollar</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">3.0603</td>
+                                                            <td id="sell">3.0657</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/ae/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">AED</div>
+                                                                    <span id="full-name">UA.Emirates Dirham</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">116.1417</td>
+                                                            <td id="sell">116.3114</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/cn/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">CNY</div>
+                                                                    <span id="full-name">Chinese Yuan</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">0.6013</td>
+                                                            <td id="sell">0.6025</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/us/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">USD</div>
+                                                                    <span id="full-name">United States Dollar</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">4.42660</td>
+                                                            <td id="sell">4.2720</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/my/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">MYR</div>
+                                                                    <span id="full-name">Malaysian Ringgit</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">1.0000</td>
+                                                            <td id="sell">1.0000</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/vn/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">VND</div>
+                                                                    <span id="full-name">Vietnamese dong</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">0.0183</td>
+                                                            <td id="sell">0.0184</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/mm/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">MMK</div>
+                                                                    <span id="full-name">Myanmar Kyat</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">0.3049</td>
+                                                            <td id="sell">0.3054</td>
+                                                        </tr><tr id="curr-table-wrapper2">
+                                                            <td>
+                                                                <div class="icon"><span class="helper"></span><img id="url" src="https://www.countryflags.io/tw/flat/64.png"></div>
+                                                                <div class="currency_name">
+                                                                    <div class="title" id="abbv-name">TWD</div>
+                                                                    <span id="full-name">New Taiwan Dollar</span>
+                                                                </div>
+                                                            </td>
+                                                            <td id="buy">14.3126</td>
+                                                            <td id="sell">14.3471</td>
+                                                        </tr></tbody>
+                                                </table>
+                                                <!-- <div class="time"> Last updated rates at 2020-06-04 02:32:13 </div> -->
+                                                <div class="info"> Regulated by TT Currency Exchange. Rates are indicative and
+                                                    subject to change. These may vary by bank or service used. </div>
+                                                
+                                            </div>
+                    
+                                        </div>
+                    
+                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>          
                 </div>
             </div>
+
+
+
         </section>
+
+       
+
         <!-- slider Area End-->
         <!--? Services Area Start -->
-        <section class="services-area pt-top border-bottom pb-20 mb-60">
+        <!-- <section class="services-area pt-top border-bottom pb-20 mb-60">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -149,10 +271,177 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Services End -->
+
+
+        <!-- Carousel -->
+        <section style="margin:20px 100px;">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                                <div class="col-xs-4 explore-image " >
+                                    <img 
+                                    style="vertical-align: top; max-width: 100px;"
+                                    src="./img/thaitower_yellow.png">
+                                </div>
+                                <div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en=='THB'">
+                                    <div>For</div>
+                                    <div class="text-bold text-big"> 1 USD</div>
+                                    <div>You will get 
+                                        <span class="text-bold ng-binding" ng-bind="currencyItem.sellRate">31.51</span>
+                                        <span class="text-bold"> THB</span>
+                                    </div>
+                                    <div>From us</div>
+                                    <a href="#!/en/currency#THB">
+                                        <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                            EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">THB</span> 
+                                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                </div><!-- end ngIf: currencyItem.shortName_en=='THB' -->
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7 col-lg-8 no-padding">
+                            <img  alt="THB - Thai Baht Currency | สกุลเงิน บาท ไทย | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/8333969d53baf04ed61ff1a62eb86c531506497107218.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/8333969d53baf04ed61ff1a62eb86c531506497107218.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">Thailand</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The country that perfectly combines with an acculturation, nature, and modernity. You can design your travel trip as your desire. You will impress and not forget when visiting Thailand.</span></div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                
+                        <div class="col-xs-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                            <div class="col-xs-4 explore-image "><img  style="vertical-align: top; max-width: 100px;" src="img/us_tower_yellow.png"></div>
+                            <!-- ngIf: currencyItem.shortName_en !='THB' --><div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en !='THB'">
+                                <div>For</div>
+                                <div class="text-bold text-big"><span ng-bind="currencyItem.sellRate" class="ng-binding">31.51</span> THB
+                                </div>
+                                <div>You will get <span class="text-bold"> 1 <span ng-bind="currencyItem.shortName_en" class="ng-binding">USD</span></span></div>
+                                <div>From us</div>
+                                <a href="#!/en/currency#USD" ng-click="gaTackEvent('Homepage','Click','Explore_'+currencyItem.shortName_en+'_button ')">
+                                    <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                        EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">USD</span> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                                </a></div><!-- end ngIf: currencyItem.shortName_en !='THB' --></div>
+                            <!-- ngIf: currencyItem.shortName_en=='THB' -->
+                        </div>
+                        <div class="col-xs-12 col-md-7 col-lg-8 no-padding"><img alt="USD - US Dollars Currency | สกุลเงิน ดอลลาร์ สหรัฐ | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/0c693ce278fc3325b655a7e40a9c2f5b1506495975941.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/0c693ce278fc3325b655a7e40a9c2f5b1506495975941.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">United States</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The unmissable land of freedom, diversity, and technology you have to pin!</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                            <div class="col-xs-4 explore-image " ><img style="vertical-align: top; max-width: 100px;" src="img/china_tower_yellow.png"></div>
+                            <!-- ngIf: currencyItem.shortName_en !='THB' --><div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en !='THB'">
+                                <div>For</div>
+                                <div class="text-bold text-big"><span ng-bind="currencyItem.sellRate" class="ng-binding">4.55</span> THB
+                                </div>
+                                <div>You will get <span class="text-bold"> 1 <span ng-bind="currencyItem.shortName_en" class="ng-binding">CNY</span></span></div>
+                                <div>From us</div>
+                                <a href="#!/en/currency#CNY" ng-click="gaTackEvent('Homepage','Click','Explore_'+currencyItem.shortName_en+'_button ')">
+                                    <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                        EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">CNY</span> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                                </a></div><!-- end ngIf: currencyItem.shortName_en !='THB' --></div>
+                            <!-- ngIf: currencyItem.shortName_en=='THB' -->
+                        </div>
+                        <div class="col-xs-12 col-md-7 col-lg-8 no-padding"><img alt="CNY - Chinese Yuan Currency | สกุลเงิน หยวน จีน | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/8aa2b740c6730e9ed919b634dc47820e1506496952429.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/8aa2b740c6730e9ed919b634dc47820e1506496952429.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">China</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The exotic extensive land. Touch the unique diverse cultures and antique historical places which bring your imagination to the top.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                            <div class="col-xs-4 explore-image " ><img  style="vertical-align: top; max-width: 100px;" src="img/london_tower_yellow.png"></div>
+                            <!-- ngIf: currencyItem.shortName_en !='THB' --><div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en !='THB'">
+                                <div>For</div>
+                                <div class="text-bold text-big"><span ng-bind="currencyItem.sellRate" class="ng-binding">41.4</span> THB
+                                </div>
+                                <div>You will get <span class="text-bold"> 1 <span ng-bind="currencyItem.shortName_en" class="ng-binding">GBP</span></span></div>
+                                <div>From us</div>
+                                <a href="#!/en/currency#GBP" ng-click="gaTackEvent('Homepage','Click','Explore_'+currencyItem.shortName_en+'_button ')">
+                                    <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                        EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">GBP</span> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                                </a></div><!-- end ngIf: currencyItem.shortName_en !='THB' --></div>
+                            <!-- ngIf: currencyItem.shortName_en=='THB' -->
+                        </div>
+                        <div class="col-xs-12 col-md-7 col-lg-8 no-padding">
+                            <img alt="GBP - British Pounds Currency | สกุลเงิน ปอนด์ อังกฤษ | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/fe4f53bd810b8f49b7ad5ebc64d41c5e1506496069819.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/fe4f53bd810b8f49b7ad5ebc64d41c5e1506496069819.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">United Kingdom,</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The co-cultural combined country. Melted all the history and arts of diverse races and cultures which blend in the modern way of technology beautifully.</span></div>
+                        </div>
+
+                    </div>
+                </div>
+               
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                            <div class="col-xs-4 explore-image " ><img style="vertical-align: top; max-width: 100px;" src="img/japan_tower_yellow.png"></div>
+                            <!-- ngIf: currencyItem.shortName_en !='THB' --><div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en !='THB'">
+                                <div>For</div>
+                                <div class="text-bold text-big"><span ng-bind="currencyItem.sellRate" class="ng-binding">0.2985</span> THB
+                                </div>
+                                <div>You will get <span class="text-bold"> 1 <span ng-bind="currencyItem.shortName_en" class="ng-binding">JPY</span></span></div>
+                                <div>From us</div>
+                                <a href="#!/en/currency#JPY" ng-click="gaTackEvent('Homepage','Click','Explore_'+currencyItem.shortName_en+'_button ')">
+                                    <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                        EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">JPY</span> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                                </a></div><!-- end ngIf: currencyItem.shortName_en !='THB' -->
+                            <!-- ngIf: currencyItem.shortName_en=='THB' -->
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-md-7 col-lg-8 no-padding"><img alt="JPY - Japanese Yen Currency | สกุลเงิน เยน ญี่ปุ่น | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/4f856dd4499182b013f8ebeee17d8c9e1506496511422.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/4f856dd4499182b013f8ebeee17d8c9e1506496511422.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">Japan</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The unique country which blends in the most modern technology and originality of Japanese culture.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5 col-lg-4 superrich-color-green text-small-big superrich-bg-light-gray div-explore-image" style="padding-right: 5px;">
+                            <div class="row">
+                            <div class="col-xs-4 explore-image " ><img style="vertical-align: top; max-width: 100px;" src="img/paris_tower_yellow.png"></div>
+                            <!-- ngIf: currencyItem.shortName_en !='THB' --><div class="col-xs-8 explore-detail ng-scope" style="padding-left: 10px; padding-right: 0px" ng-if="currencyItem.shortName_en !='THB'">
+                                <div>For</div>
+                                <div class="text-bold text-big"><span ng-bind="currencyItem.sellRate" class="ng-binding">37.15</span> THB
+                                </div>
+                                <div>You will get <span class="text-bold"> 1 <span ng-bind="currencyItem.shortName_en" class="ng-binding">EUR</span></span></div>
+                                <div>From us</div>
+                                <a href="#!/en/currency#EUR" ng-click="gaTackEvent('Homepage','Click','Explore_'+currencyItem.shortName_en+'_button ')">
+                                    <div class="btn-web superrich-bg-super-light-green superrich-color-white btn-explore">
+                                        EXPLORE <span ng-bind="currencyItem.shortName_en" class="ng-binding">EUR</span> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+                                </a></div><!-- end ngIf: currencyItem.shortName_en !='THB' --></div>
+                            <!-- ngIf: currencyItem.shortName_en=='THB' -->
+                        </div>
+                        <div class="col-xs-12 col-md-7 col-lg-8 no-padding"><img alt="EUR - Euros Currency | สกุลเงิน ยูโร | Super Rich Thailand | ซุปเปอร์ริช" ng-src="https://www.superrichthailand.com:443/uploads/images/903e32cb795d46c6d9fa465f93e9c51f1506496285284.jpeg" class="img-responsive banner-image" src="https://www.superrichthailand.com:443/uploads/images/903e32cb795d46c6d9fa465f93e9c51f1506496285284.jpeg">
+                            <div class="banner-description"><span ng-bind="currencyItem['bannerTitle_'+lang]" class="ng-binding">Europe</span>&nbsp;<span ng-bind="currencyItem['bannerDescription_'+lang]" class="ng-binding">The classic and modern destination which is interesting both culture and geography landscape view. Lots of places to visit and experience as you desire.</span></div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                
+                
+                
+                
+                
+                
+            </div>
+        </section>
+
+
         <!--? Offer-services Start  -->
-        <section class="offer-services pb-bottom2">
+        <!-- <section class="offer-services pb-bottom2">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -203,7 +492,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Offer-services End  -->
         <!--? Want To work -->
         <section class="container">
@@ -213,7 +502,7 @@
                         <div class="col-xl-8 col-lg-9 col-md-7">
                             <div class="wantToWork-caption wantToWork-caption2">
                                 <h2>Call us for a service</h2>
-                                <p>We deliver the goods to the most complicated places on earth</p>
+                                <p>We always deliver the best currency rates available.</p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-5">
@@ -290,7 +579,7 @@
         </section>
         <!-- Testimonials_end -->
         <!--? Company achievement Start -->
-        <section class="services-area section-padding40 fix">
+        <!-- <section class="services-area section-padding40 fix">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
@@ -334,22 +623,27 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Company achievement End -->
         <!--? About Area  -->
         <section class="about-area2 pb-bottom mt-30">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-12">
+                        <div class="about-img ">
+                            <img src="img/gallery/about1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
                         <div class="about-caption mb-50">
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-25">
                                 <h2>About company</h2>
                             </div>
                             <p class="mb-20">
-                                The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!
+                                TT Currency Exchange is a licensed Money exchange company in Thailand (No. MC325550166). Whether you’re sending money home to your loved ones or going on holiday and need foreign currency, we have all your needs covered.
                             </p>
-                            <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                            <p class="mb-30">Best rates available on our service. Call us now!</p>
 
                             <a href="about.html" class="btn">About Us</a>
                         </div>
@@ -360,7 +654,7 @@
         <!-- About Area End -->
         <!--?  Map Area start  -->
         <div class="Map-area" style="background-color: blue;">
-            <img style="background-color: blue;" src="" alt="" class="w-100">
+            <img style="background-color: blue;" src="img/gallery/Map.png" alt="" class="w-100">
         </div>
         <!-- Map Area End -->
     </main>
@@ -374,11 +668,12 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.html"><img width="200px"src="img/logo.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
-                                <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                                <p>TT Currency Exchange is a licensed Money exchange company in Thailand (No. MC325550166). Whether you’re sending money home to your loved ones or going on holiday and need foreign currency, we have all your needs covered.
+                                </p>
                             </div>
                         </div>
                         <!-- social -->
@@ -395,11 +690,11 @@
                     <div class="footer-tittle">
                         <h4>Services </h4>
                         <ul>
-                            <li><a href="#">- Dry Cleaning</a></li>
-                            <li><a href="#">- Dry Clean</a></li>
-                            <li><a href="#">- Ironing Services</a></li>
-                            <li><a href="#">- Laundry Service London</a></li>
-                            <li><a href="#">- Laundry App</a></li>
+                            <li><a href="#">- Home</a></li>
+                            <li><a href="#">- Exchange Rates</a></li>
+                            <li><a href="#">- About Us</a></li>
+                            <li><a href="#">- Contact Us</a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -410,8 +705,8 @@
                         <h4>Get in touch</h4>
                         <ul>
                             <li class="number"><a href="#">(90) 898 789-8957</a></li>
-                            <li><a href="#">laundry@567.com</a></li>
-                            <li><a href="#">789/A, Green road NYC-9089</a></li>
+                            <li><a href="#">contact@ttcurrencyexchange.com</a></li>
+                            <li><a href="#">The Market, 111 Ratchadamri Rd, Lumphini, Pathum Wan District, Bangkok 10330 Thailand</a></li>
                         </ul>
                     </div>
                 </div>
@@ -444,9 +739,9 @@
 
 <!-- JS here -->
 
-<script src="./js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./js/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
-<script src="./js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-1.12.4.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <!-- Jquery Mobile Menu -->
