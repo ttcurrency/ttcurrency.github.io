@@ -283,6 +283,10 @@ a, button {
 .mobile-Exchange{
     display:none;
 }
+
+.carousel{
+    margin:20px 100px;
+}
 /* small mobile :320px. */
 @media (max-width: 767px) {
     .imagelogo {
@@ -293,5 +297,17 @@ a, button {
     }
     .mobile-Exchange{
         display:block!important;
+    }
+    .explore-detail{
+        font-size:small;
+    }
+    .ng-binding{
+        font-size:small;
+    }
+    .carousel{
+        margin:20px 0px;
+    }
+    .banner-description{
+        padding-left:40px;
     }
 }
