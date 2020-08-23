@@ -1,5 +1,12 @@
 node_modules
+readme.txt
 package.json
 Doc
 main.html
+package-lock.json
+gulpfile.js
+
+
+*.html
+*.php
 
