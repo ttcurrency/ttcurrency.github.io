@@ -380,7 +380,7 @@ section.exchangecard input{
   border-color:var(--main-color);
   border-width: 0 0 2px;
   padding-bottom: 5px;
-  font-size:30px;
+  font-size:22px;
 }
 
 section.exchangecard input:focus {
