@@ -48,8 +48,15 @@ gooss.data(
         
         // Retrieves exchange rate using Google Sheet
         function getXR(from, to){
+            console.log(to);
+            console.log(from);
+            if(to ==="VND" && from === "THB"){
+                return 737.17;
+            }
+            if(to ==="THB" && from === "VND"){
+                return 0.0014;
+            }
             let rates = getObj(data.exchangerates, "From \\ To", from);
-            
             return rates[to];
         };
 
@@ -65,10 +72,10 @@ gooss.data(
         }
         
         // Example Usage
-        console.log("MYR to SGD : " + getXR("MYR", "SGD"));
-        console.log("THB to USD : " + getXR("THB", "USD"));
-        console.log("GBP to MYR : " + getXR("GBP", "MYR"));
-        // document.getElementById("output").innerHTML = JSON.stringify(data, null, 2);
+        // console.log("MYR to SGD : " + getXR("MYR", "SGD"));
+        // console.log("THB to USD : " + getXR("THB", "USD"));
+        // console.log("GBP to MYR : " + getXR("GBP", "MYR"));
+        // // document.getElementById("output").innerHTML = JSON.stringify(data, null, 2);
 
 
         var currency_table = [
@@ -76,59 +83,59 @@ gooss.data(
 			 'abbv': 'SGD',
 			 'credit': '0.3310',
 			 'cash':'0.3310',
-			 'buy':buyXR("SGD","MYR"),
-			 'sell':sellXR("SGD", "MYR"),
+			 'buy':buyXR("SGD","THB"),
+			 'sell':sellXR("SGD", "THB"),
 			 'link':'https://www.countryflags.io/sg/flat/64.png'},
 
 			 {'name': 'UA.Emirates Dirham',
 			 'abbv': 'AED',
 			 'credit': '0.8600',
 			 'cash':'0.8600',
-			 'buy':buyXR("AED","MYR"),
-			 'sell':sellXR("AED", "MYR"),
+			 'buy':buyXR("AED","THB"),
+			 'sell':sellXR("AED", "THB"),
 			 'link':'https://www.countryflags.io/ae/flat/64.png'},
 			 {'name': 'Chinese Yuan',
 			 'abbv': 'CNY',
 			 'credit': '1.6610',
 			 'cash':'1.6610',
-			 'buy':buyXR("CNY","MYR"),
-			 'sell':sellXR("CNY", "MYR"),
+			 'buy':buyXR("CNY","THB"),
+			 'sell':sellXR("CNY", "THB"),
 			 'link':'https://www.countryflags.io/cn/flat/64.png'},
 			 {'name': 'United States Dollar',
 			 'abbv': 'USD',
 			 'credit': '0.2333',
 			 'cash':'0.2333',
-			 'buy':buyXR("USD","MYR"),
-			 'sell':sellXR("USD", "MYR"),
+			 'buy':buyXR("USD","THB"),
+			 'sell':sellXR("USD", "THB"),
 			 'link':'https://www.countryflags.io/us/flat/64.png'},
 			 {'name': 'Malaysian Ringgit',
 			 'abbv': 'MYR',
 			 'credit': '1.0000',
 			 'cash':'1.0000',
-			 'buy':'1.0000',
-			 'sell':'1.0000',
+			 'buy':buyXR("MYR","THB"),
+			 'sell':sellXR("MYR","THB"),
 			 'link':'https://www.countryflags.io/my/flat/64.png'},
 			 {'name': 'Thai Bhat',
 			 'abbv': 'THB',
 			 'cash': '5,450.8300',
 			 'credit': '5,450.8300',
-			 'buy':buyXR("THB","MYR"),
-			 'sell':sellXR("THB", "MYR"),
+			 'buy':'1.0000',
+			 'sell':'1.0000',
 			 'link': 'https://www.countryflags.io/th/flat/64.png'},
 			 {'name': 'Japanese Yen',
 			 'abbv': 'JPY',
 			 'cash': '328.5510',
 			 'credit': '328.5510',
-			 'buy':buyXR("JPY","MYR"),
-			 'sell':sellXR("JPY", "MYR"),
+			 'buy':buyXR("JPY","THB"),
+			 'sell':sellXR("JPY", "THB"),
 			 'link': 'https://www.countryflags.io/jp/flat/64.png'},
 			 {'name': 'Phillipines Pesos',
 			 'abbv': 'PHP',
 			 'cash': '6.9700',
 			 'credit': '6.9700',
 			 'link': 'https://www.countryflags.io/ph/flat/64.png',
-			 'buy':buyXR("PHP","MYR"),
-			 'sell':sellXR("PHP", "MYR"),
+			 'buy':buyXR("PHP","THB"),
+			 'sell':sellXR("PHP", "THB"),
             }
         ]
         
@@ -163,8 +170,8 @@ gooss.data(
             }else{
                 
                 let country = $("#flagimg").attr('code');
-                console.log(getXR("MYR",country));
-                $("#transferBtmInput").val((top*getXR("MYR",country)).toFixed(4));
+                // console.log(getXR("MYR",country));
+                $("#transferBtmInput").val((top*getXR("THB",country)).toFixed(4));
             }
         });
         $("#transferBtmInput").keyup(function(){
@@ -176,7 +183,7 @@ gooss.data(
                 
                 let country = $("#flagimg").attr('code');
                 
-                $("#transferTopInput").val((top*getXR(country,"MYR")).toFixed(4));
+                $("#transferTopInput").val((top*getXR(country,"THB")).toFixed(4));
             }
         });
 
