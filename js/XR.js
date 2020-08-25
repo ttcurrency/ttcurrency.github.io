@@ -180,20 +180,7 @@ gooss.data(
             }
         });
 
-        $("#lefttab").click(function(){
-            $("#moneytitle").text("How much exchange do you want to purchase?");
-            $("#moneyup").text("You Pay");
-            $("#moneydown").text("You Get");
-            $("#lefttab").addClass("active");
-            $("#righttab").removeClass("active");
-        });
-        $("#righttab").click(function(){
-            $("#moneytitle").text("How much do you want to transfer today?");
-            $("#moneyup").text("You Send");
-            $("#moneydown").text("Recipient Gets");
-            $("#righttab").addClass("active");
-            $("#lefttab").removeClass("active");
-        });
+        
 
         $("#dropdown").hover(function(){
             $("#dropcont").addClass("showCont");
@@ -215,4 +202,6 @@ function changeCode(country,src){
     $("#flagspan").text(country);
     $("#dropcont").addClass("hideCont");
     $("#dropcont").removeClass("showCont");
+    $("#transferBtmInput").val("");
+    $("#transferTopInput").val("");
 }

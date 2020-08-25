@@ -332,9 +332,24 @@
       }
   })
 
-  $('#demo-htmlselect').ddslick({
-    onSelected: function(selectedData){
-        //callback function: do something with selectedData;
-    }   
-  });
+
+  $("#lefttab").click(function(){
+    $("#moneytitle").text("How much exchange do you want to purchase?");
+    $("#moneyup").text("You Pay");
+    $("#moneydown").text("You Get");
+    $("#lefttab").addClass("active");
+    $("#righttab").removeClass("active");
+    $("#transferBtmInput").val("");
+    $("#transferTopInput").val("");
+
+});
+$("#righttab").click(function(){
+    $("#moneytitle").text("How much do you want to transfer today?");
+    $("#moneyup").text("You Send");
+    $("#moneydown").text("Recipient Gets");
+    $("#righttab").addClass("active");
+    $("#lefttab").removeClass("active");
+    $("#transferBtmInput").val("");
+    $("#transferTopInput").val("");
+});
 })(jQuery);
