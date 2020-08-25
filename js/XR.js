@@ -154,5 +154,65 @@ gooss.data(
 			$('#table1').append(example);
         });
         $('#curr-table-wrapper1').remove();
+
+        $("#transferTopInput").keyup(function(){
+            let top = $("#transferTopInput").val();
+            if(top ===""){
+                
+                $("#transferBtmInput").val("");
+            }else{
+                
+                let country = $("#flagimg").attr('code');
+                console.log(getXR("MYR",country));
+                $("#transferBtmInput").val((top*getXR("MYR",country)).toFixed(4));
+            }
+        });
+        $("#transferBtmInput").keyup(function(){
+            let top = $("#transferBtmInput").val();
+            if(top ===""){
+                
+                $("#transferTopInput").val("");
+            }else{
+                
+                let country = $("#flagimg").attr('code');
+                
+                $("#transferTopInput").val((top*getXR(country,"MYR")).toFixed(4));
+            }
+        });
+
+        $("#lefttab").click(function(){
+            $("#moneytitle").text("How much exchange do you want to purchase?");
+            $("#moneyup").text("You Pay");
+            $("#moneydown").text("You Get");
+            $("#lefttab").addClass("active");
+            $("#righttab").removeClass("active");
+        });
+        $("#righttab").click(function(){
+            $("#moneytitle").text("How much do you want to transfer today?");
+            $("#moneyup").text("You Send");
+            $("#moneydown").text("Recipient Gets");
+            $("#righttab").addClass("active");
+            $("#lefttab").removeClass("active");
+        });
+
+        $("#dropdown").hover(function(){
+            $("#dropcont").addClass("showCont");
+            $("#dropcont").removeClass("hideCont");
+        }, function(){
+            $("#dropcont").addClass("hideCont");
+            $("#dropcont").removeClass("showCont");
+        });
+        
     }
+    
 );
+
+
+function changeCode(country,src){
+    // alert(tt);
+    $("#flagimg").attr("code",country);
+    $("#flagimg").attr("src",src);
+    $("#flagspan").text(country);
+    $("#dropcont").addClass("hideCont");
+    $("#dropcont").removeClass("showCont");
+}

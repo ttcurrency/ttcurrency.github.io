@@ -210,29 +210,72 @@
 
 
        
-       <section style="margin:50px 50px;" >
-        <!--TODO-->
-        <!-- <div style="margin:auto; width:fit-content;">
-            <div class="card d-flex flex-column align-items-stretch ">
-                <div class="d-flex flex-row bd-highlight mb-3 align-items-stretch justify-content-between">
-                    <a class="p-2 bd-highlight flex-fill inactivetab" style="text-align: center;">Money Exchange</a>
-                    <a class="p-2 bd-highlight flex-fill activetab" style="text-align: center;">Money Transfer</a>
-                </div>       
-                <div class="pl-5 pr-5 pt-2 pb-2">
-                    <h3>How much do you want to transfer today?</h3>
-                </div>
-                <div class="d-flex flex-row bd-highlight mb-3 justify-content-start">
-                    <input class="flex-fill"type="number" placeholder="You Send"/>
-                    <div style="width:40px;height:20px;background-color:blue;"></div>
-                </div>
-                <div class="d-inline-flex flex-row bd-highlight mb-3">
-                    <input type="number" placeholder="Recipient Gets"/>
-                    <div style="width:20px;height:20px;background-color:blue;"></div>
-                </div>
-                <button type="button"> Submit</button>
+       <section class="exchangecard">
+        <div class="card">
+         <div class="tabcontainer">
+          <a  id="lefttab" class="tabs lefttabs active">
+             <p>Money Exchange</p></a><a id="righttab"  class="tabs righttabs"><p>Money Transfer</p>
+          </a>
+        </div>
+          <div class="moneycontainer">
+            <p id="moneytitle">How much do you want to transfer today?</p>
+            <div class="inputcontainer">
+              <div class="label">
+                <span id="moneyup">
+                  You send</span>
+              </div>
+              <div class="inputwrapper">
+                <input id="transferTopInput" type=number placeholder="0.00" />
+              </div>
+              <button class="flagwrapper">
+                <img class="flagimg" src="https://www.countryflags.io/my/flat/64.png"/>
+                <span>MYR</span>
+              </button>
             </div>
-        </div> -->
-        </section>
+            <div class="inputcontainer">
+                      <div class="label">
+                <span id="moneydown">
+      Recipient Gets</span>
+              </div>
+            <div class="inputwrapper">
+              <input id="transferBtmInput" type=number placeholder="0.00" />
+            </div>
+            <button class="flagwrapper flagDropdown" id="dropdown">
+                
+              <img class="flagimg" id="flagimg" code="USD" src="https://www.countryflags.io/us/flat/64.png"/>
+              <span id="flagspan">USD</span>
+              
+              <div class="dropdownContent" id="dropcont">
+                <div class="flagwrapper" onclick='changeCode("USD","https://www.countryflags.io/us/flat/64.png")' style="display:inline-block;">
+                    <img class="flagimg" id="flagimg" code="USD"  src="https://www.countryflags.io/us/flat/64.png"/>
+                    <span>USD</span>
+                </div>
+                <div class="flagwrapper" onclick='changeCode("GBP","https://www.countryflags.io/gb/flat/64.png")' style="display:inline-block;">
+                    <img class="flagimg" id="flagimg" code="GBP"  src="https://www.countryflags.io/gb/flat/64.png"/>
+                    <span>GBP</span>
+                </div>
+
+                <div class="flagwrapper" onclick='changeCode("SGD","https://www.countryflags.io/sg/flat/64.png")' style="display:inline-block;">
+                    <img class="flagimg" id="flagimg" code="SGD" src="https://www.countryflags.io/sg/flat/64.png"/>
+                    <span>SGD</span>
+                </div>
+                <div class="flagwrapper" onclick='changeCode("CNY","https://www.countryflags.io/cn/flat/64.png")' style="display:inline-block;">
+                    <img class="flagimg" id="flagimg" code="CNY" src="https://www.countryflags.io/cn/flat/64.png"/>
+                    <span>CNY</span>
+                </div>
+                <div class="flagwrapper" onclick='changeCode("THB","https://www.countryflags.io/th/flat/64.png")' style="display:inline-block;">
+                    <img class="flagimg" id="flagimg" code="THB" src="https://www.countryflags.io/th/flat/64.png"/>
+                    <span>THB</span>
+                </div>
+              </div>
+            </button>
+
+
+          </div>
+          </div>
+        </div>
+      </section>
+      
 
 
         <!-- slider Area End-->
@@ -776,6 +819,8 @@
 <script src="./js/bootstrap.min.js"></script>
 <!-- Jquery Mobile Menu -->
 <script src="./js/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
 
 <!-- Jquery Slick , Owl-Carousel Plugins -->
 <script src="./js/owl.carousel.min.js"></script>
